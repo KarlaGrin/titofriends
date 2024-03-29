@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.navbar {
+    height: 90px;
+    border: 1px solid red;
+    background-color: #e9fafc;  
+    padding: 10px 12px;
+    position: relative;
+}
+
+/* menu hamburguesa */
+
+.checkbox .icons{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    
+}
+
+.icons {
+    pointer-events: none;
+    font-size: 24px;
+
+}
+
+/* .checkbox {
+    opacity: 0;
+} */
+
+
+
+/* .menu li a {
+    margin: 20px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    /*elimina el subrayado*/
+ /*    font-size: large;
+    border-radius: 13px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+
+} */ 
+/* 
+a:hover {
+    background-color: darkseagreen;
+}
+
+
+.inicio {
+    background-color: darkseagreen;
+    border: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* tratando de hacer respopnsivo el sitio */
+
+
+/* .logo img {
+    font-weight: bold;
+    border-radius: 13px;
+} */
