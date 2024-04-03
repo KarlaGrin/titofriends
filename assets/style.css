@@ -2,76 +2,119 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* sirve para el diseño de páginas web responsivas. facilita el diseño y la alineación de elementos en el diseño de la página.*/
 }
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: white;
 }
 
+
+/* inicio navbar */
 .navbar {
-    height: 90px;
-    border: 1px solid red;
-    background-color: #e9fafc;  
+    background-color:rgb(192, 245, 220);
+    height: 48px;
     padding: 10px 12px;
-    position: relative;
+    position: relative; /* cuando tengo una posicion relativa todos los demas elementos que esten en posicion absoluta toman posicion respecto del relative */
+   
 }
 
-/* menu hamburguesa */
+.huella {
+    border-radius: 13px;
+    top: 3px;
+    width: auto;
+    height: 40px;
+}
 
-.checkbox .icons{
+.checkbox,
+.icons {
     width: 24px;
     height: 24px;
     position: absolute;
     top: 10px;
     right: 12px;
     cursor: pointer;
-    
 }
 
 .icons {
     pointer-events: none;
+    /* no se podra hacer click sobre ellos */
     font-size: 24px;
+    /* para cambiar el tamaño de los iconos como si fuesen texto */
 
 }
 
-/* .checkbox {
+.checkbox {
     opacity: 0;
-} */
-
-
-
-/* .menu li a {
-    margin: 20px;
-    padding: 10px;
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-    /*elimina el subrayado*/
- /*    font-size: large;
-    border-radius: 13px;
-    transition-property: background-color;
-    transition-duration: 300ms;
-
-} */ 
-/* 
-a:hover {
-    background-color: darkseagreen;
+    /* hace que el checkbox no se vea pero siga extando disponible de forma oculta */
 }
 
-
-.inicio {
-    background-color: darkseagreen;
-    border: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
+.fi-br-cross {
+    display: none;
+    /* hace que la X=icono cerrar originalmente aparezca oculta */
 }
 
-/* tratando de hacer respopnsivo el sitio */
+/* .checkbox:checked hace la logica. si el checkbox esta cliqueado entonces el menu no se muestra  */
+.checkbox:checked~.fi-rs-paw {
+    display: none;
+}
 
+/* .checkbox:checked hace la logica. si el checkbox esta cliqueado entonces se muestra el cerrar y se oculta el menu */
+.checkbox:checked~.fi-br-cross {
+    display: block;
+}
 
-/* .logo img {
-    font-weight: bold;
-    border-radius: 13px;
-} */
+.menu{
+    width: 200px;
+    position: absolute;
+    top: -150px;
+    z-index: -1; /* sirve como capa, si el valor es negativo me lleva a la capa de atras, solo funciona para elementos que han modificado su position en absolute */
+    right: 0;
+    transition: 250ms;
+}
+
+.menu li{
+    list-style: none; /* sirve para quitarle los puntitos a la lista */
+}
+
+.menu li a{
+    text-decoration: none; /* quita el subrayado del enlace */
+    color: inherit; /* quita el color de "enlace" para darle estilo, inherit es para heredar un color predeterminado antes */
+    background-color:rgb(192, 245, 220);
+    display: block; /* ocup
+    ar todo el espacio con el color */
+    padding: 10px 12px;
+}
+
+.menu li a:hover{
+    background-color:rgb(188, 238, 215);
+}
+
+.checkbox:checked ~ .menu{
+    top: 48px;
+}
+
+@media (min-width: 500px){
+    .checkbox, .fi-rs-paw, .fi-br-cross{
+        display: none;
+    }
+
+    .menu{
+        top: 0;
+        z-index: 1;
+        width: unset;
+        display: flex;
+        height: 48px;
+
+    }
+
+    .menu li a {
+        height: 48px;
+        padding: 14px 12px 6px;
+    }
+}
+    
+/* fin navbar */
+
