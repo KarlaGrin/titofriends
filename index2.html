@@ -2,113 +2,220 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tito Friends Shop</title>
-    <!-- icono pestaña -->
-    <link rel="icon" href="./assets/img/TitoFriends.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/style4.css">
-    <!-- bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- icons de bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Flaticon -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-brands/css/uicons-brands.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tito Friends Shop</title>
+  <!-- icono pestaña -->
+  <link rel="icon" href="./assets/img/TitoFriends.ico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style4.css">
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- icons de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Flaticon -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-brands/css/uicons-brands.css'>
+  <!-- Tailwind -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <header>
+  <header>
 
-        <nav class="navbar">
-            <div>
-                <ul class="logo">
-                    <li><img class="logo1" src="./assets/img/TitoFriends.jpg" alt="TitoFriendsLogo"></li>
-                    <li><i class="i fi fi-brands-instagram"></i></li>
+    <nav class="navbar">
+      <div>
+        <ul class="logo">
+          <li><img class="logo1" src="./assets/img/TitoFriends_logo_negrita.png" alt="TitoFriendsLogo"></li>
+          <li><i class="i fi fi-brands-instagram"></i></li>
 
-                    <li><i class="i fi fi-brands-tik-tok"></i></li>
-                </ul>
+          <li><i class="i fi fi-brands-tik-tok"></i></li>
+        </ul>
+      </div>
+
+      <div>
+        <input class="checkbox" type="checkbox">
+
+        <!-- se le agrega la clase icons para que sea mas facil identificalo en CSS -->
+        <i class="icons bi bi-house-heart"></i>
+        <i class="icons bi bi-x"></i>
+
+
+        <ul class="menu">
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">¿Quiénes somos?</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#"><button type="button" class="boton">Inicia sesión</button></a></li>
+          <li><a href="#"><button type="button" class="boton">Regístrate</button></a></li>
+
+        </ul>
+      </div>
+
+    </nav>
+
+    <main>
+
+      <div class="huellas">
+        <img src="./assets/img/download.gif" alt="huellitas">
+
+      </div>
+
+      <br>
+      <br><br><br>
+      <!-- Jumbotron -->
+
+      <div class="contenedor">
+
+        <div class="jumboText">
+
+          <h1 class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Bienvenidos a nuestro peludo mundo</h1>
+          <br>
+          <p class="mx-auto max-w-prose text-xl text-black-500">Explora nuestro blog lleno de consejos útiles, historias conmovedoras y noticias del mundo
+            de las mascotas.
+            <br><b>¡Y no te olvides de visitar nuestra tienda para encontrar los mejores productos
+              para consentir a tu peludo amigo!</b>
+          </p>
+          <br>
+          <input type="email" class="email" size="40" placeholder="Ingresa tu correo">
+          <button type="button" class="boton2">Regístrate </button>
+          <br>
+          <h6>¡Recibirás nuestro newsletter con descuentos!</h6>
+
+        </div>
+        <div class="jumboText">
+          <img class="object-fill" src="./assets/img/mascotas_fondo rosa.png" alt="">
+        </div>
+
+      </div>
+
+
+      <!-- Blog -->
+      <section>
+
+        <div class="relative bg-gray-50 py-16"> <!--   sm:py-24 lg:py-32 -->
+          
+          <div class="relative">
+            <div class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+
+              <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                TITO FRIENDS SHOP&BLOG
+              </p>
+              <p class="mt-5 mx-auto max-w-prose text-xl text-black-500">
+                Descubre Consejos, Historias Enternecedoras y Novedades para los regalones de la casa.
+              </p>
             </div>
 
-            <div>
-                <input class="checkbox" type="checkbox">
+            <div class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
 
-                <!-- se le agrega la clase icons para que sea mas facil identificalo en CSS -->
-                <i class="icons bi bi-house-heart"></i>
-                <i class="icons bi bi-x"></i>
+              <!-- tarjeta 1 -->
 
 
-                <ul class="menu">
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="#">¿Quiénes somos?</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#"><button type="button" class="boton">Inicia sesión</button></a></li>
-                    <li><a href="#"><button type="button" class="boton">Regístrate</button></a></li>
-
-                </ul>
-            </div>
-
-        </nav>
-
-        <main>
-
-            <div class="huellas">
-                <img src="./assets/img/huellitas_franja (2000 x 100 px).gif" alt="huellitas">
-
-            </div>
-
-<br>
-<br><br><br>
-            <!-- Jumbotron -->
-
-            <div class="contenedor">
-
-                <div class="jumboText">
-
-                    <h1>Bienvenidos a nuestro peludo mundo</h1>
-                    <h5>Explora nuestro blog lleno de consejos útiles, historias conmovedoras y noticias del mundo
-                        de las mascotas.
-                        <br><br><b>¡Y no te olvides de visitar nuestra tienda para encontrar los mejores productos
-                            para consentir a tu peludo amigo!</b>
-                    </h5>
-                    <br>
-                    <input type="email" class="email" size="40" placeholder="Ingresa tu correo">
-                    <button type="button" class="boton2">Regístrate </button>
-                    <br>
-                    <h6>¡Recibirás nuestro newsletter con descuentos!</h6>
-
+              <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div class="flex-shrink-0">
+                  <img class="h-48 w-full object-cover" src="./assets/img/famila con perrito.png" alt="">
                 </div>
-                <div class="jumboText">
-                    <img class="imgJum" src="./assets/img/mascotas fondo rosa.png" alt="">
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div class="flex-1">
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-gray-900">
+                        ¿Tienes preguntas sobre cómo cuidar mejor a tu mascota?
+                      </p>
+                      <p class="mt-3 text-base text-gray-500">
+                        Explora nuestro blog para encontrar
+                        guías
+                        detalladas sobre temas como el entrenamiento, la salud y la nutrición de mascotas,
+                        elaboradas con amor y cuidado para que tú y tu amigo peludo disfruten de una vida
+                        juntos
+                        llena de alegría.
+                      </p> 
+                      <div class="btn3">
+                        <a href="#" class="boton3">Ir al blog</a>
+                      </div>
+                  </div>
                 </div>
+              </div>
+
+
+
+              <!-- tarjeta 2 -->
+
+
+              <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div class="flex-shrink-0">
+                  <img class="h-48 w-full object-cover" src="./assets/img/pug y gatito.png" alt="">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div class="flex-1">
+
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-gray-900">
+                        Encuentra los mejores regalos para tu mascota
+                      </p>
+                      <p class="mt-3 text-base text-gray-500">
+                        ¿Quieres consentir a tu mascota con algo especial? Explora nuestra
+                        tienda para
+                        descubrir
+                        una amplia gama de productos únicos y de alta calidad que harán que tu peludo amigo
+                        se
+                        sienta amado y mimado.
+                      </p>
+                      <div class="btn3">
+                        <a href="#" class="boton3">Ir a la tienda</a>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- tarjeta 3 -->
+
+              <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div class="flex-shrink-0">
+                  <img class="h-48 w-full object-cover" src="./assets/img/Perrito feliz.png" alt="">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div class="flex-1">
+
+                    <a href="#" class="block mt-2">
+                      <p class="text-xl font-semibold text-gray-900">
+                        Guía práctica para cuidar a tu mascota
+                      </p>
+                      <p class="mt-3 text-base text-gray-500">
+                        Encuentra consejos útiles para ayudarte a cuidar mejor a tu mascota.
+                        Desde cómo
+                        mantener
+                        su pelaje brillante hasta cómo mantener su salud dental en buen estado, nuestros
+                        expertos están aquí para brindarte toda la información que necesitas para mantener
+                        feliz
+                        y saludable a tu amigo peludo.
+                      </p> 
+                      <div class="btn3">
+                        <a href="#" class="boton3">Ir al blog</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
-
-
-            <section class="blog">
-                <div>
-
-
-                </div>
-                <div></div>
-                <div></div>
-
-
-
-            </section>
+          </div>
+        </div>
+      </section>
 
 
 
 
-        </main>
+    </main>
 
-        <footer>
+    <footer>
 
 
-        </footer>
+    </footer>
+
 </body>
 
 </html>
