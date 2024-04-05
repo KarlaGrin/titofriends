@@ -30,8 +30,6 @@ body {
     height: 150px;
     margin-top: 0;
     padding: 5px;
-
-
 }
 
 .logo1 {
@@ -49,18 +47,16 @@ body {
 @media (max-width: 450px) {
     .logo1 {
         width: 0.5rem;
-        /* Reducir el tamaño del logo para pantallas pequeñas */
         margin: auto;
-        /* Ajustar el margen para pantallas pequeñas */
+
     }
 }
 
 @media (max-width: 600px) {
     .logo1 {
         width: 2rem;
-        /* Reducir el tamaño del logo para pantallas pequeñas */
         margin: auto;
-        /* Ajustar el margen para pantallas pequeñas */
+
     }
 }
 
@@ -68,9 +64,7 @@ body {
 @media (max-width: 1150px) {
     .logo1 {
         width: 5rem;
-        /* Reducir aún más el tamaño del logo para pantallas más pequeñas */
         margin: auto;
-        /* Ajustar el margen para pantallas más pequeñas */
     }
 }
 
@@ -196,6 +190,8 @@ body {
 
 /* fin navbar */
 
+/* decoracion de patitas en GIF */
+
 .huellas {
     width: 100%;
     height: auto;
@@ -222,14 +218,9 @@ body {
 
 }
 
-
-
 .imgJum {
     max-width: 100%;
     height: auto;
-
-
-
 }
 
 .email {
@@ -251,10 +242,7 @@ body {
     background-color: #82E0AA;
 }
 
-
-
-
-/* Media Queries para hacerlo responsivo */
+/* Responsividad de la zona jumbotron */
 @media screen and (min-width: 768px) {
     .contenedor {
         flex-direction: row;
@@ -269,8 +257,6 @@ body {
         width: 50%;
     }
 
-    
-
 }
 
 /* fin jumbotron */
@@ -280,7 +266,6 @@ body {
 .btn3 {
     flex: 1;
     margin: 5px;
-
 }
 
 .boton3 {
@@ -293,7 +278,6 @@ body {
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
-
 }
 
 .boton3:hover {
@@ -328,16 +312,15 @@ body {
     height: auto;
     box-sizing: border-box;
     margin: 0;
-    
+
 }
 
 .slider-box {
-    width: 50%;
+    width: 80%;
     height: auto;
     /* margin: 10px; */
     overflow: hidden;
-    
-
+    margin-left: 50px;
 }
 
 .slider-box ul {
@@ -346,24 +329,27 @@ body {
     align-items: center;
     width: 400%;
     animation: slide 20s infinite ease;
-   
 
 }
 
 .slider-box li {
-    width: 50%;
+    width: 100%;
     list-style: none;
     position: relative;
-    
-    
 }
 
-.slider-img{
+.slider-img {
     width: 100%;
     height: auto;
 }
 
-
+.jumboText2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 15px;
+    align-items: center;
+}
 
 
 @keyframes slide {
@@ -403,23 +389,21 @@ body {
 @media screen and (max-width: 768px) {
     .contenedor2 {
         flex-direction: column;
-        justify-content:center;
+        justify-content: space-between;
     }
 
-    .jumboText{
-        width: 100%;
-
-    }
-
-   /*  .slider-box {
+    .jumboText2 {
         width: 80%;
-    } */
-   
+
+    }
+
+    .slider-box {
+        width: 80%;
+    }
 
 }
 
-
-
+/* fin zona article */
 
 /* footer */
 .flex-container {
