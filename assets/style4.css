@@ -24,22 +24,48 @@ body {
     /* cuando tengo una posicion relativa todos los demas elementos que esten en posicion absoluta toman posicion respecto del relative */
 }
 
+
 .logo {
     width: 150px;
     height: 150px;
     margin-top: 0;
     padding: 5px;
+    
+    
 }
 
 .logo1 {
-    width: auto;
-    height: 110px;
+    width: 8rem;
+    height: auto;
     border-radius: 50%;
     padding: 10px;
     margin: 18px;
     position: absolute;
     display: inline-flexbox;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+@media (max-width: 450px) {
+    .logo1 {
+        width: 0.5rem; /* Reducir el tamaño del logo para pantallas pequeñas */
+        margin: auto; /* Ajustar el margen para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .logo1 {
+        width: 2rem; /* Reducir el tamaño del logo para pantallas pequeñas */
+        margin: auto; /* Ajustar el margen para pantallas pequeñas */
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .logo1 {
+        width: 5rem; /* Reducir aún más el tamaño del logo para pantallas más pequeñas */
+        margin: auto; /* Ajustar el margen para pantallas más pequeñas */
+    }
 }
 
 .i {
@@ -195,6 +221,7 @@ body {
     max-width: 100%;
     height: auto;
     
+    
 
 }
 
@@ -248,11 +275,11 @@ body {
 
 .boton3{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     border: none;
     border-radius: 5px;
-    width: 100px;
+    width: 30%;
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
@@ -263,3 +290,38 @@ body {
     background-color: #82E0AA;
 }
 
+/* articulo */
+.next{
+    background-color: black;
+}
+
+.boton4{
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    background-color: rgb(194, 240, 225);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5px;
+    
+}
+
+.boton4:hover {
+    background-color: #82E0AA;
+}
+
+/* footer */
+.flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 100px;
+    padding: 50px;
+    background-color: #82E0AA;
+}
+
+.derechos{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #82E0AA;
+}
