@@ -30,8 +30,8 @@ body {
     height: 150px;
     margin-top: 0;
     padding: 5px;
-    
-    
+
+
 }
 
 .logo1 {
@@ -48,23 +48,29 @@ body {
 
 @media (max-width: 450px) {
     .logo1 {
-        width: 0.5rem; /* Reducir el tamaño del logo para pantallas pequeñas */
-        margin: auto; /* Ajustar el margen para pantallas pequeñas */
+        width: 0.5rem;
+        /* Reducir el tamaño del logo para pantallas pequeñas */
+        margin: auto;
+        /* Ajustar el margen para pantallas pequeñas */
     }
 }
 
 @media (max-width: 600px) {
     .logo1 {
-        width: 2rem; /* Reducir el tamaño del logo para pantallas pequeñas */
-        margin: auto; /* Ajustar el margen para pantallas pequeñas */
+        width: 2rem;
+        /* Reducir el tamaño del logo para pantallas pequeñas */
+        margin: auto;
+        /* Ajustar el margen para pantallas pequeñas */
     }
 }
 
 
 @media (max-width: 1150px) {
     .logo1 {
-        width: 5rem; /* Reducir aún más el tamaño del logo para pantallas más pequeñas */
-        margin: auto; /* Ajustar el margen para pantallas más pequeñas */
+        width: 5rem;
+        /* Reducir aún más el tamaño del logo para pantallas más pequeñas */
+        margin: auto;
+        /* Ajustar el margen para pantallas más pequeñas */
     }
 }
 
@@ -212,7 +218,8 @@ body {
     text-align: center;
     margin-bottom: 20px;
     margin: 15px;
-    
+    align-items: center;
+
 }
 
 
@@ -220,8 +227,8 @@ body {
 .imgJum {
     max-width: 100%;
     height: auto;
-    
-    
+
+
 
 }
 
@@ -237,7 +244,7 @@ body {
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
-    
+
 }
 
 .boton2:hover {
@@ -261,21 +268,24 @@ body {
     .imgJum {
         width: 50%;
     }
+
+    
+
 }
 
 /* fin jumbotron */
 
 /* section Blog - se utiliza tailwind para las tarjetas*/
 
-.btn3{
+.btn3 {
     flex: 1;
     margin: 5px;
-    
+
 }
 
-.boton3{
+.boton3 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border: none;
     border-radius: 5px;
@@ -283,7 +293,7 @@ body {
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
-    
+
 }
 
 .boton3:hover {
@@ -291,37 +301,139 @@ body {
 }
 
 /* articulo */
-.next{
+.next {
     background-color: black;
 }
 
-.boton4{
+.boton4 {
     border: none;
     border-radius: 5px;
     width: 160px;
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
-    
+
 }
 
 .boton4:hover {
     background-color: #82E0AA;
 }
 
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ABEBC6;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.slider-box {
+    width: 50%;
+    height: auto;
+    /* margin: 10px; */
+    overflow: hidden;
+    
+
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    width: 400%;
+    animation: slide 20s infinite ease;
+   
+
+}
+
+.slider-box li {
+    width: 50%;
+    list-style: none;
+    position: relative;
+    
+    
+}
+
+.slider-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: .200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor2 {
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .jumboText{
+        width: 100%;
+
+    }
+
+   /*  .slider-box {
+        width: 80%;
+    } */
+   
+
+}
+
+
+
+
 /* footer */
 .flex-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     gap: 100px;
     padding: 50px;
     background-color: #82E0AA;
 }
 
-.derechos{
+.derechos {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: #82E0AA;
 }
