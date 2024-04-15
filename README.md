@@ -12,7 +12,7 @@ Tito Friends es un sitio web dedicado a los amantes de las mascotas. Ofrece una 
 
 <b>Despliegue</b>
 <a href="https://titofriends.netlify.app">Tito Friends Website</a>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b3c4c270-782d-4511-bdee-e37a3090bd42/deploy-status)](https://app.netlify.com/sites/titofriends/deploys)
+
 
 
 <b>Tecnologías utilizadas</b>
