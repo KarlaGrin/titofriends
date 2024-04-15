@@ -11,7 +11,7 @@ El proyecto web que he ideado se denomina 'Tito Friends'. Esta es una iniciativa
 Tito Friends es un sitio web dedicado a los amantes de las mascotas. Ofrece una variedad de productos para mascotas en su tienda en línea y proporciona contenido útil y entretenido en su blog. El objetivo del sitio es ayudar a los propietarios de mascotas a cuidar mejor a sus compañeros peludos y proporcionarles productos de calidad para su bienestar y felicidad.
 
 <b>Despliegue</b>
-<a href="https://karlagrin.github.io/titofriends/">Tito Friends Website</a>
+<a href="https://titofriends.netlify.app">Tito Friends Website</a>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b3c4c270-782d-4511-bdee-e37a3090bd42/deploy-status)](https://app.netlify.com/sites/titofriends/deploys)
 
 

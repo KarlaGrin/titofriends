@@ -18,9 +18,11 @@ body {
     background-color: #ABEBC6;
     color: black;
     font-weight: bold;
-    height: 55px;
+    height: 55px; 
     padding: 10px 12px;
     position: relative;
+    display: flex;
+    justify-content: center;
     /* cuando tengo una posicion relativa todos los demas elementos que esten en posicion absoluta toman posicion respecto del relative */
 }
 
@@ -145,6 +147,7 @@ body {
     width: 100px;
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 
 }
 
@@ -226,6 +229,7 @@ body {
 .email {
     border-radius: 5px;
     border: none;
+    padding: 10px;
 }
 
 .boton2 {
@@ -235,8 +239,10 @@ body {
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
-
+    padding: 10px;
 }
+
+
 
 .boton2:hover {
     background-color: #82E0AA;
@@ -266,7 +272,9 @@ body {
 .btn3 {
     flex: 1;
     margin: 5px;
+    
 }
+
 
 .boton3 {
     display: flex;
@@ -278,7 +286,9 @@ body {
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
+    padding: 10px;
 }
+
 
 .boton3:hover {
     background-color: #82E0AA;
@@ -296,6 +306,8 @@ body {
     background-color: rgb(194, 240, 225);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5px;
+    padding: 10px;
+
 
 }
 
