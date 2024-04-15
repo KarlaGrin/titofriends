@@ -29,3 +29,8 @@ El proyecto consta de varias secciones:
 3. Blog: Sección que presenta artículos del blog sobre consejos y noticias relacionadas con mascotas.
 4. Artículo: Sección que promociona una campaña de adopción de mascotas.
 5. Footer: Pie de página con enlaces de contacto, información útil y formas de pago aceptadas.
+
+Prototipo proyecto:
+
+<img src="./assets/img/PROTOTIPO PROYECTO C12.png" alt="Prototipo">
+
